@@ -1,0 +1,1 @@
+@include('ecommerce::front.products.layouts.outlet.outlet_option_one')

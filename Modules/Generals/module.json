@@ -1,0 +1,14 @@
+{
+    "name": "Generals",
+    "alias": "generals",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Generals\\Providers\\GeneralsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

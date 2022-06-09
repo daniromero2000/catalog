@@ -1,0 +1,134 @@
+/* ************************
+    General
+************************** */
+.product-description {
+    padding: 10px 0;
+}
+
+.product-description p {
+    line-height: 18px;
+    font-size  : 14px;
+}
+
+.alert-shop img {
+    max-height  : 90px;
+    margin-right: 15px;
+}
+
+.alert-shop h3 {
+    font-size : 31px;
+    color     : #404040;
+    margin-top: 10px;
+}
+
+.alert-shop p {
+    font-size : 18px;
+    color     : #404040;
+    margin-top: 10px;
+}
+
+.header {
+    height: 40px;
+}
+
+.alert-shop a {
+    background-color: #ba3d6b;
+    color           : white;
+    border-color    : #ba3d6b;
+    font-weight     : 500;
+    margin-top      : 10px;
+}
+
+.alert-shop a:hover {
+    opacity         : 0.7;
+    background-color: #ba3d6b;
+    color           : white;
+    border-color    : #ba3d6b;
+}
+
+.alert-warning {
+    color           : #856404;
+    background-color: #fffbef;
+    border-color    : #fffbee;
+}
+
+.line-bottom {
+    border-bottom : 1.3px solid #6f6e6e;
+    margin-bottom : 1%;
+    padding-bottom: 1%;
+    width         : 83%
+}
+
+.title-product {
+    margin-bottom: 5px;
+    font-size    : 17px;
+    color        : #5a5858;
+}
+
+.cover {
+    max-width    : 78px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ************************
+    SMALL DESKTOP VERSION 
+************************** */
+@media (min-width: 980px) and (max-width: 1200px) {
+    .line-bottom {
+        width: 97%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .line-bottom {
+        width: 96%
+    }
+
+    .title-product {
+        font-size: 15px;
+    }
+
+    .container-quanty {
+        max-width: 100px;
+    }
+
+    .small-reset {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .line-bottom {
+        width: 95%
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .hidden {
+        display: inline;
+    }
+
+    .options {
+        position: absolute;
+        top     : 0px;
+        right   : 60px;
+    }
+
+    .cover {
+        max-width    : 110px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .bg-blue-page b {
+        font-size: 14px;
+    }
+}

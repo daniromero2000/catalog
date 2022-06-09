@@ -1,0 +1,13 @@
+{
+    "name": "Banking",
+    "alias": "banking",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Banking\\Providers\\BankingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

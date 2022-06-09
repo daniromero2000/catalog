@@ -1,0 +1,1 @@
+@include('ecommerce::front.thank_you_pages.layouts.baloto.baloto_option_one')

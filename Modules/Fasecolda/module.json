@@ -1,0 +1,13 @@
+{
+    "name": "Fasecolda",
+    "alias": "fasecolda",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Fasecolda\\Providers\\FasecoldaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Streamings",
+    "alias": "streamings",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Streamings\\Providers\\StreamingsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "TusDatos",
+    "alias": "tusdatos",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TusDatos\\Providers\\TusDatosServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

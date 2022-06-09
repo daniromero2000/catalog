@@ -1,0 +1,14 @@
+{
+    "name": "Pqrs",
+    "alias": "pqrs",
+    "description": "",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Pqrs\\Providers\\PqrsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}

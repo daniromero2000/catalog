@@ -1,0 +1,37 @@
+<?php
+
+namespace Modules\Generals\Entities\AgeProtectionBanner;
+
+use Illuminate\Http\Request;
+
+class AgeProtectionBanner
+{
+    public static function generate_accept_link(Request $r)
+    {
+        $ses_name    = config('ageprotectionbanner.ses_name');
+        $return_link = $r->url();
+        $return_link = $return_link . '?' . $ses_name . '=yes';
+
+        if ($r->input('id')) {
+            $return_link = $return_link . '&id=' . $r->input('id');
+        }
+
+        if ($r->input('s')) {
+            $return_link = $return_link . '&s=' . $r->input('s');
+        }
+
+        if ($r->input('utm_source')) {
+            $return_link = $return_link . '&utm_source=' . $r->input('utm_source');
+        }
+
+        if ($r->input('utm_medium')) {
+            $return_link = $return_link . '&utm_medium=' . $r->input('utm_medium');
+        }
+
+        if ($r->input('utm_campaign')) {
+            $return_link = $return_link . '&utm_campaign=' . $r->input('utm_campaign');
+        }
+
+        return $return_link;
+    }
+}

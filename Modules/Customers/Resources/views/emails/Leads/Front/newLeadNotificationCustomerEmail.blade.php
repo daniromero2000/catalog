@@ -1,0 +1,1 @@
+@include('layouts.mail.Leads.Front.newLeadNotificationCustomerEmail')

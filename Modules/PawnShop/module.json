@@ -1,0 +1,13 @@
+{
+    "name": "PawnShop",
+    "alias": "pawnshop",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PawnShop\\Providers\\PawnShopServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

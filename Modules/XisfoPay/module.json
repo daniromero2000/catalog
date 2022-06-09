@@ -1,0 +1,13 @@
+{
+    "name": "XisfoPay",
+    "alias": "xisfopay",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\XisfoPay\\Providers\\XisfoPayServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "CamStudio",
+    "alias": "camstudio",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\CamStudio\\Providers\\CamStudioServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

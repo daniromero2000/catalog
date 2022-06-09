@@ -1,0 +1,1 @@
+@include('ecommerce::front.thank_you_pages.layouts.pse.pse_option_one')

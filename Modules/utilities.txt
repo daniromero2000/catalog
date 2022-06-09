@@ -1,0 +1,97 @@
+// input group con ícono
+<div class="form-group">
+    <label class="form-control-label" for="input_name"></label>
+    <div class="input-group input-group-merge">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fas fa-pen"></i></span>
+        </div>
+        <input class="form-control" type="text" name="input_name" id="input_name">
+    </div>
+</div>
+
+// advertencia de tamaño
+<div class="col-12" id="size_overflow_{{id}}" style="display: none">
+    <h3>TAMAÑO DE ARCHIVO EXCEDIDO<span style="color: #f5365c;">
+            <i class="fas fa-exclamation-circle"></i>
+        </span></h3>
+    <p>
+        El tamaño máximo de todos los archivos a subir debe ser menor o igual a 10MB
+    </p>
+    <p>Los archivos que has seleccionado pesan <span id="total_size_{{id}}"></span>MB</p>
+</div>
+
+// formato de números ocultos
+{{ substr(number, 4) . str_repeat("*", strlen(number)-8) . substr(number, -4) }}
+
+//$input is the email address and $show is the number of characters you want displayed.. defaults to 3
+function hideEmail($input,$show=3) {
+   $arr = explode('@', $input);
+   return substr($arr[0],0,$show).str_repeat('*',strlen($arr[0])-$show).$arr[1];
+}
+
+
+// disable_button javascript event
+// put this code inside the form tag, with parameter being the id of the button to disable
+onsubmit="disable_button('button_id')"
+
+//$chaturbateStreamingAccounts = $this->cammodelStreamAccountsInterface->getCammodelsStreamAccounts('1');
+//$otherStreamingAccounts      = $this->cammodelStreamAccountsInterface->getCammodelsStreamAccounts();
+//$this->streamingStatsInterface->getStreamingsApiStats($chaturbateStreamingAccounts);
+//$this->streamingStatInterface->getStreamingsApiStats($otherStreamingAccounts);
+
+//dd($cammodels[0]->created_at->dayOfWeek);
+
+
+$permission_module = Permission::factory()->create([
+            //id = 56
+            'name'                => 'permission_module',
+            'display_name'        => 'module_name',
+            'icon'                => 'fas fa-check',
+            'permission_group_id' =>  $studio->id
+        ]);
+
+        //Acciones Módulo module_name
+        Action::factory()->create([
+            //id = 234
+            'permission_id' => $permission_module->id,
+            'name'          => 'Ver module_names',
+            'icon'          => 'fas fa-eye',
+            'route'         => 'admin.module_route.index',
+            'principal'     => 1
+        ]);
+
+        Action::factory()->create([
+            //id = 235
+            'permission_id' => $permission_module->id,
+            'name'          => 'Crear module_name',
+            'icon'          => 'fas fa-plus',
+            'route'         => 'admin.module_route.create',
+            'principal'     => 1
+        ]);
+
+        Action::factory()->create([
+            //id = 236
+            'permission_id' => $permission_module->id,
+            'name'          => 'Editar module_name',
+            'icon'          => 'fas fa-edit',
+            'route'         => 'admin.module_route.edit',
+            'principal'     => 0
+        ]);
+
+        Action::factory()->create([
+            //id = 237
+            'permission_id' => $permission_module->id,
+            'name'          => 'Ver module_name',
+            'icon'          => 'fas fa-search',
+            'route'         => 'admin.module_route.show',
+            'principal'     => 0
+        ]);
+
+        Action::factory()->create([
+            //id = 238
+            'permission_id' => $permission_module->id,
+            'name'          => 'Borrar module_name',
+            'icon'          => 'fas fa-trash',
+            'route'         => 'admin.module_route.destroy',
+            'principal'     => 0
+        ]);

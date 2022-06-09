@@ -1,0 +1,11 @@
+/Customers/node_modules
+/Companies/node_modules
+/Ecommerce/node_modules
+.DS_Store
+.Rproj.user
+.Rdata
+.Rhistory
+.httr-oauth
+/storage/framework/laravel-excel
+modules_statuses.json
+/storage

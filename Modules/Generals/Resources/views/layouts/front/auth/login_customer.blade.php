@@ -1,0 +1,1 @@
+@include('ecommerce::front.auth.login_option_one')
